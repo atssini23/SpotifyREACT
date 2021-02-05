@@ -51,6 +51,11 @@ body {
       font-size: 0.9rem;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-right: 15px;
+      }
       &.active {
         background: #282828;
         color: white;
