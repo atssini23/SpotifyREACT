@@ -14,6 +14,7 @@ const Nav = () => {
       </div>
       <ul>
         <li className="active">
+          <title>Home</title>
           <svg
             viewBox="0 0 512 512"
             width="24"
@@ -28,6 +29,7 @@ const Nav = () => {
           Home
         </li>
         <li>
+          <title>Search</title>
           <svg
             viewBox="0 0 512 512"
             width="24"
@@ -43,6 +45,7 @@ const Nav = () => {
           Search
         </li>
         <li>
+          <title>Your Library</title>
           <svg
             viewBox="0 0 512 512"
             width="24"
