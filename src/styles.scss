@@ -1,7 +1,16 @@
 @font-family{
   font-family:circular-book; //no fonts
 }
-
+.uppercase{
+  text-transform: uppercase;
+}
+.smallText{
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  &.bold{
+    font-weight: 600;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -11,8 +20,9 @@ body {
 }
 
 .subText{
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: #b3b3b3;
+  font-weight: 600;
 }
 
 .App {
@@ -43,16 +53,26 @@ body {
   ul {
     padding: 0;
     margin: 0;
+    a{
+      color: inherit;
+      text-decoration: none;
+  
+      &:visted {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
     li {
       color: #b3b3b3;
       list-style-type: none;
       border-radius: 5px;
-      padding: 0.8rem;
+      padding: 0.5rem 0.8rem;
       font-size: 0.9rem;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       display: flex;
       align-items: center;
+     
       svg{
         margin-right: 15px;
       }
@@ -117,10 +137,12 @@ body {
   width: 100%;
   overflow-y: scroll;
   position: relative;
-  padding-top: 3.8rem;
+  padding-top: 3.4rem;
   .mainContent {
     color: white;
-    padding: 0.5rem 2rem;
+    .mainInner{
+      padding: 0.5rem 2rem;
+    }
     h1, h2 {
       font-size: 1.8rem;
     }
@@ -134,6 +156,10 @@ body {
   }
   .cardsWrapInner{
     display: flex;
+    a{
+      color:inherit;
+      text-decoration: none;
+    }
   }
   .subText{
     margin-top: 0.5rem;
@@ -170,6 +196,7 @@ body {
         font-weight: 600;
         font-size: 0.9rem;
         margin-bottom: 0;
+        letter-spacing: 0.6px;
       }
       span{
         font-size: 0.8rem;
@@ -179,7 +206,7 @@ body {
   }
 }
 
-.playIcon{
+.playIcon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -187,15 +214,57 @@ body {
   display: flex;
   background: #1db954;
   opacity: 0;
-  margin-left: auto;
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
   color:white;
   svg{
-  margin: auto;
+    margin: auto;
   }
-  
-  
-  
-  //position: absolute;
-  //right: 1.2rem;
-  //bottom: 1.2rem;
+}
+
+.playlistPage {
+  display: flex;
+  background-color: rgb(214,214, 214);
+  .mainInner{
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0,0,0,0.5)),
+    color-stop(40%, #121212)
+  );
+    background-image: linear-gradient(rgba(0,0,0,0.5), #121212 40%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .playlistPageInfo{
+   //width: 300px;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    .playlistPageImage{
+      width: 250px;
+      height: 250px;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -webkit-box-shadow: 0 4px 60px rgba(0,0,0,.5);
+      box-shadow: 0 4px 60px rgba(0,0,0,.5);
+      }
+    }
+  }
+  .playlistPageContent{
+    text-align: left;
+    padding: 1.5rem 2rem;
+    h1{
+      font-size: 7rem;
+      margin: 0;
+      line-height: 1;
+      word-spacing: -18px;
+      letter-spacing: -6px;
+    }
+  }
 }

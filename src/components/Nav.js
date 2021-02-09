@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "../svg/Home";
 import Search from "../svg/Search";
-import YourLibrary from "../svg/YourLibrary";
+import Library from "../svg/Library";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -16,21 +17,27 @@ const Nav = () => {
         </svg>
       </div>
       <ul>
-        <li className="active">
-          <title>Home</title>
-          <Home />
-          Home
-        </li>
-        <li>
-          <title>Search</title>
-          <Search />
-          Search
-        </li>
-        <li>
-          <title>Your Library</title>
-          <YourLibrary />
-          Your Library
-        </li>
+        <Link to="/">
+          <li className="active">
+            <title>Home</title>
+            <Home />
+            Home
+          </li>
+        </Link>
+        <Link to="/search">
+          <li>
+            <title>Search</title>
+            <Search />
+            Search
+          </li>
+        </Link>
+        <Link to="/your-library">
+          <li>
+            <title>Your Library</title>
+            <Library />
+            Your Library
+          </li>
+        </Link>
       </ul>
       <div className="cookies">
         <span>Cookies</span>

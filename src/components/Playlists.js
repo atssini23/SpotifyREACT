@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Playlists = (props) => {
   const dataPlaylists = [
@@ -65,30 +66,32 @@ const Playlists = (props) => {
 
   return (
     <div className="cardsWrapInner">
-      {matchedPlaylists.map((playlist) => (
-        <div className="card">
-          <div className="cardImage">
-            <img src={playlist.img} alt="Pic 1" />
+      {matchedPlaylists.map((playlist, id) => (
+        <Link to={`/playlist/` + playlist.id}>
+          <div className="card" key={id}>
+            <div className="cardImage">
+              <img src={playlist.img} alt="Pic 1" />
+            </div>
+            <div className="cardContent">
+              <h3>{playlist.name}</h3>
+              <span>{playlist.des}</span>
+            </div>
+            <span className="playIcon">
+              <svg
+                height="16"
+                role="img"
+                width="16"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <polygon
+                  points="21.57 12 5.98 3 5.98 21 21.57 12"
+                  fill="currentColor"
+                ></polygon>
+              </svg>
+            </span>
           </div>
-          <div className="cardContent">
-            <h3>{playlist.name}</h3>
-            <span>{playlist.des}</span>
-          </div>
-          <span className="playIcon">
-            <svg
-              height="16"
-              role="img"
-              width="16"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <polygon
-                points="21.57 12 5.98 3 5.98 21 21.57 12"
-                fill="currentColor"
-              ></polygon>
-            </svg>
-          </span>
-        </div>
+        </Link>
       ))}
     </div>
   );

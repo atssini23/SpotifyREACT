@@ -25,9 +25,9 @@ const Categories = () => {
     }
   ];
   return (
-    <div>
-      {dataCategories.map((category) => (
-        <div className="cardsWrap">
+    <div className="mainInner">
+      {dataCategories.map((category, id) => (
+        <div className="cardsWrap" key={id}>
           <h2>{category.name}</h2>
           <p className="subText">Music to help you concentrate.</p>
           <Playlists category_id={category.id} />
