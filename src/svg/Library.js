@@ -1,6 +1,6 @@
 import React from "react";
 
-const YourLibrary = () => {
+const Library = () => {
   return (
     <svg
       viewBox="0 0 512 512"
@@ -15,4 +15,4 @@ const YourLibrary = () => {
     </svg>
   );
 };
-export default YourLibrary;
+export default Library;
