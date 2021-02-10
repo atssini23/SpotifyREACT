@@ -16,12 +16,16 @@ const PlaylistPage = () => {
           </div>
           <div className="playlistPageContent">
             <p className="smallText uppercase bold">Playlist</p>
-            <h1>Title</h1>
+            <h1>A Perfect Day</h1>
 
-            <p className="smallText">
+            <p className="tagline">
               Minimalism, electronica and modern classical to conentrate to.{" "}
             </p>
-            <p>Spotify</p>
+            <div className="playlistPageDesc">
+              <p className="spotify">Spotify</p>
+              <span>699,428 likes</span>
+              <span>4 hr 35 min</span>
+            </div>
           </div>
         </div>
         <div className="playlistPageSongs">
