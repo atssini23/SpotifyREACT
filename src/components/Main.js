@@ -14,7 +14,6 @@ const Main = () => {
           <Route path="/your-library">Your Library</Route>
           <Route path="/playlist/:id" component={PlaylistPage}></Route>
         </Switch>
-        <Categories />
       </div>
     </div>
   );
