@@ -267,28 +267,32 @@ body {
       letter-spacing: -6px;
     }
     .tagline{
-      font-size: 1rem;
+      font-size: 0.9rem;
       opacity: 0.7;
+      margin-bottom: 0.5rem;
 
     }
     .playlistPageDesc{
       display: flex;
       align-items: center;
+      font-size: 0.9rem;
       p{
         margin:0;
       }
       span{
         opacity: 0.7;
         position: relative;
-        padding-left: 10px;
+        padding-left: 20px;
         &:before{
           content: '';
-          width: 8px;
-          background: inherit;
+          width: 4px;
+          height: 4px;
+          background:white;
           overflow: hidden;
           border-radius: 50%;
           position: absolute;
-          left: 0; 
+          margin-left: -10px; 
+          top: 9px;
         }
       }
     }
