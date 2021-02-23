@@ -343,6 +343,9 @@ ul.songList{
       h3{
         margin: 0;
       }
+      span{
+        color: rgba(255,255,255,0.7);
+      }
     }
     .songTime{
       margin-left: auto;
@@ -350,7 +353,7 @@ ul.songList{
     .songIcon{
       padding-right: 0.5rem;
       svg{
-        fill: white;
+        fill: rgba(255,255,255,0.7);
         width: 15px;
         height: 15px;
       }
