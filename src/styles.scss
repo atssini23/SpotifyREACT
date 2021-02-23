@@ -256,6 +256,39 @@ body {
       }
     }
   }
+  .playlistPageSongs{
+    height: 100%;
+    .playlistButtons{
+      display: flex;
+      align-items: center;
+      .playIcon{
+          @extend .playIcon;
+          opacity: 1;
+          margin-left: 0;
+          position: relative;
+          height: 56px;
+          width: 56px;
+          right: 0;
+          bottom: 0;
+          svg{
+            height:26px;
+            width: 26px;
+          }
+      }
+    }
+    .icons{
+      .icon{
+        margin-left: 0.5rem;
+      }
+      .iconsHeart{
+        width: 36px;
+        height: 36px;
+        svg{
+          fill: white;
+        }
+      }
+    }
+  }
   .playlistPageContent{
     text-align: left;
     padding: 1.5rem 2rem;
@@ -295,6 +328,35 @@ body {
           top: 9px;
         }
       }
+    }
+  }
+}
+ul.songList{
+  padding: 0;
+  li{
+    list-style-type: none;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    .songDetails{
+      h3{
+        margin: 0;
+      }
+    }
+    .songTime{
+      margin-left: auto;
+    }
+    .songIcon{
+      padding-right: 0.5rem;
+      svg{
+        fill: white;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &:hover{
+      background: red;
     }
   }
 }
