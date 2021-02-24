@@ -1,6 +1,6 @@
 import React from "react";
 
-const SongIcon = () => {
+const NoteIcon = () => {
   return (
     <svg
       height="32"
@@ -13,4 +13,4 @@ const SongIcon = () => {
     </svg>
   );
 };
-export default SongIcon;
+export default NoteIcon;

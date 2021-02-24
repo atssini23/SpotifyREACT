@@ -1,6 +1,7 @@
 import React from "react";
 import PlayIcon from "../../svg/PlayIcon";
 import IconsHeart from "../../svg/IconsHeart";
+import NoteIcon from "../../svg/NoteIcon";
 import IconsDots from "../../svg/IconsDots";
 import SongIcon from "../../svg/SongIcon";
 import { useParams } from "react-router-dom";
@@ -49,31 +50,12 @@ const PlaylistPage = () => {
           <ul className="songList">
             <li>
               <div className="songIcon">
-                <SongIcon />
-              </div>
-              <div className="songDetails">
-                <h3>Greenlight </h3>
-                <span>Lorde</span>
-              </div>
-              <div className="songTime">
-                <span>3:55</span>
-              </div>
-            </li>
-            <li>
-              <div className="songIcon">
-                <SongIcon />
-              </div>
-              <div className="songDetails">
-                <h3>Greenlight </h3>
-                <span>Lorde</span>
-              </div>
-              <div className="songTime">
-                <span>3:55</span>
-              </div>
-            </li>
-            <li>
-              <div className="songIcon">
-                <SongIcon />
+                <div className="noteI">
+                  <SongIcon />
+                </div>
+                <div className="playI">
+                  <PlayIcon />
+                </div>
               </div>
               <div className="songDetails">
                 <h3>Greenlight </h3>
